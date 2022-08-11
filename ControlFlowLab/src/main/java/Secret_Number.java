@@ -41,7 +41,7 @@ public class Secret_Number {
         // tell the player the secret number
         System.out.println("The number was " + int_random);
 
-        //I tried to nest code within a while loop to allow user to try again, but it proved too difficult at this stage as.
+        //I tried to nest code within a while loop to allow user to try again, but it proved too difficult at this stage.
 
     }
 
