@@ -8,16 +8,16 @@ public class Secret_Number {
         Scanner sc= new Scanner(System.in);
 
         //welcome player - give instructions
-        System.out.println("Welcome to the amazing Secret Number Game! \nWhen you're ready, guess a number between 0-20 then press enter!");
+        System.out.println("Welcome to the amazing Secret Number Game! \nWhen you're ready, guess a number between 0-5 then press enter!");
 
         //generate random number between 0-20
         Random rand = new Random();
-        int upperbound = 21;
+        int upperbound = 6;
         int int_random = rand.nextInt(upperbound);
-        
+
         //Ask user to input number
         System.out.print("Enter your number- ");
-        int a= sc.nextInt();
+        int a = sc.nextInt();
 
         // if player input is larger or smaller than secret number - print message
         if (a > int_random){
@@ -39,11 +39,9 @@ public class Secret_Number {
         }
 
         // tell the player the secret number
-        System.out.println("The number was" + int_random);
+        System.out.println("The number was " + int_random);
 
-        //query if they would like to play again
-
-
+        //I tried to nest code within a while loop to allow user to try again, but it proved too difficult at this stage as.
 
     }
 
